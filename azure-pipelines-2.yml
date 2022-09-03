@@ -8,7 +8,7 @@ trigger:
 
 variables:
   # Azure Resource Manager connection created during pipeline creation
-  azureSubscription: 'ad6b16d0-3317-4250-af58-fa278fef9666'
+  azureSubscription: '9fe0e004-e178-49a5-8277-4f7f8d1aee68'
   
 pool:
   vmImage: ubuntu-latest;
