@@ -10,8 +10,6 @@ variables:
   # Azure Resource Manager connection created during pipeline creation
   azureSubscription: '367139cf-f92c-4c47-a1e7-3c51a1d6dfb8'
   
-pool:
-  vmImage: ubuntu-latest;
 
 steps:
     - task: AzureMysqlDeployment@1
