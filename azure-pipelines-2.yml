@@ -1,0 +1,32 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- master
+
+steps:
+    - task: AzureMysqlDeployment@1
+      inputs:
+        azureSubscription: '9fe0e004-e178-49a5-8277-4f7f8d1aee68>
+        ServerName: 'm365ksharedb.mysql.database.azure.com'
+        SqlUsername: 'llnux@m365ksharedb'
+        SqlPassword: '$(SQLpass)'
+        TaskNameSelector: 'InlineSqlTask'
+  - task: PublishBuildArtifacts@1
+    inputs:
+      PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+      ArtifactName: 'dropDB'
+      publishLocation: 'Container'
+
+  - task: PublishBuildArtifacts@1
+    inputs:
+      PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+      ArtifactName: 'dropDB'
+      publishLocation: 'Container'
+
+  - script: |
+      echo Add other tasks to build, test, and deploy your project.
+      echo See https://aka.ms/yaml 
+    displayName: 'Run a multi-line script'
