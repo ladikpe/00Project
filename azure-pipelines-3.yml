@@ -19,7 +19,6 @@ steps:
         SqlUsername: 'llnux@m365ksharedb'
         SqlPassword: 'Password12345678'
         TaskNameSelector: 'InlineSqlTask'
-        SqlInline: |
         IpDetectionMethod: 'AutoDetect'        
 
     - task: PublishBuildArtifacts@1
