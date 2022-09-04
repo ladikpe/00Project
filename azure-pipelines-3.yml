@@ -17,7 +17,7 @@ steps:
         azureSubscription: '367139cf-f92c-4c47-a1e7-3c51a1d6dfb8'
         ServerName: 'm365ksharedb.mysql.database.azure.com'
         SqlUsername: 'llnux@m365ksharedb'
-        SqlPassword: '$(SQLpass)'
+        SqlPassword: 'Password12345678'
         TaskNameSelector: 'InlineSqlTask'
         SqlInline: |
         IpDetectionMethod: 'AutoDetect'        
